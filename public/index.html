@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="./css/tailwind.css">
+    <title>Document</title>
+</head>
+<body class="font-Poppins">
+
+    <!-- BARRA DE NAVEGACION -->
+    <nav class="relative container mx-auto p-6  md:text-sm lg:text-base">
+
+        <div class="flex items-center justify-between">
+
+            <div class="pt-2">
+                <img src="./img/logo.svg" alt="">
+            </div>
+
+            <div class="hidden md:flex space-x-6">
+                <a href="#Pricing" class="hover:text-darkGrayishBlue">Precios</a>
+                <a href="#Products" class="hover:text-darkGrayishBlue">Productos</a>
+                <a href="#About" class="hover:text-darkGrayishBlue">Acerca de</a>
+                <a href="#Carreers" class="hover:text-darkGrayishBlue">Carreras</a>
+                <a href="#Community" class="hover:text-darkGrayishBlue">Comunidad</a>
+            </div>
+
+            <a href="#" class="hidden md:block p-3 px-6 pt-2 text-white text-center bg-brightRed rounded-full hover:bg-brightRedLight">Empezar</a>
+
+            <!-- MENU HAMBURGUESA -->
+            <button id="menu-btn" class="p-3 space-y-2 bg-darkBlue rounded shadow block hamburguer md:hidden focus:outline-none">
+                <span class="block w-7 h-0.5 bg-gray-100 animate-pulse"></span>
+                <span class="block w-7 h-0.5 bg-gray-100 animate-pulse"></span>
+                <span class="block w-7 h-0.5 bg-gray-100 animate-pulse"></span>
+            </button>
+
+        </div>
+
+        <!-- MENU MOVIL -->
+        <div class="md:hidden">
+            <div id="menu" class="absolute flex-col items-center hidden self-end py-8 mt-10 space-y-8 font-bold bg-white sm:w-auto sm:self-center left-6 right-6 drop-shadow-md">
+                <a href="#">Precios</a>
+                <a href="#">Productos</a>
+                <a href="#">Acerca de</a>
+                <a href="#">Carreras</a>
+                <a href="#">Comunidad</a>
+            </div>
+        </div>
+    </nav>
+    <!-- BARRA DE NAVEGACION -->
+
+    <!-- INTRODUCCION -->
+    <section id="hero">
+        <div class="container flex flex-col-reverse md:flex-row items-centera px-6 mx-auto mt-10 space-y-0 md:space-y-0">
+
+            <div class="flex flex-col mb-32 space-y-12 md:w-1/2">
+                <h1 class="max-w-md text-4xl font-bold text-center md:text-5xl md:text-left">Reúne a todo el mundo para crear mejores productos</h1>
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">Manage facilita a los equipos de software la planificación de las tareas diarias
+                    sin perder de vista los objetivos más amplios del equipo.</p>
+                <div class="flex justify-center md:justify-start">
+                    <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full hover:bg-brightRedLight">Empezar</a>
+                </div>
+           </div>
+           <div class="md:w-1/2">
+               <img src="./img/illustration-intro.svg" alt="">
+           </div>
+         
+
+        </div>
+    </section>
+    <!-- INTRODUCCION -->
+
+    <!-- CARACTERISTICAS -->
+
+    <section id="features">
+        <!-- CONTENEDOR -->
+        <div class="container flex flex-col px-4 mx-auto mt-10 space-y-12 md:space-y-0 md:flex-row">
+
+            <div class="flex flex-col space-y-12 md:w-1/2">
+
+                <h2 class="max-w-md text-4xl font-bold text-center md:text-left">¿Qué tiene de diferente Manage?</h2>
+                
+                <p class="max-w-sm text-center text-darkGrayishBlue md:text-left">Manage proporciona toda la funcionalidad que su equipo necesita, sin la complejidad. Nuestro software está hecho a medida para los equipos de productos digitales modernos.  </p>
+            </div>
+
+            <!-- LISTA ENNUMERADA -->
+            <div class="flex flex-col space-y-8 md:w-1/2">
+                <!-- ITEM 1 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- HEADING -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+
+                        <div class="flex items-center space-x-2">
+
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">01</div>
+
+                            <h3 class="text-base font-bold md:mb-4 md:hidden"> Seguimiento del progreso de toda la empresa</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block"> Seguimiento del progreso de toda la empresa</h3>
+                        <p class="text-darkGrayishBlue">Vea cómo sus tareas cotidianas encajan en una visión más amplia. Pase de seguir el progreso a nivel de logros hasta el más mínimo detalle. No vuelva a perder de vista el panorama en general.</p>
+                    </div>
+                </div>
+                <!-- ITEM 2 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- HEADING -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+
+                        <div class="flex items-center space-x-2">
+
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">02</div>
+
+                            <h3 class="text-base font-bold md:mb-4 md:hidden">Informes integrados avanzados</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">Informes integrados avanzados</h3>
+                        <p class="text-darkGrayishBlue">Establezca estimaciones de entrega internas y siga el progreso hacia los objetivos de la empresa. Nuestro panel de control personalizable le ayuda a crear los informes que necesita para mantener informados a los principales interesados.</p>
+                    </div>
+                </div>
+                <!-- ITEM 3 -->
+                <div class="flex flex-col space-y-3 md:space-y-0 md:space-x-6 md:flex-row">
+                    <!-- HEADING -->
+                    <div class="rounded-l-full bg-brightRedSupLight md:bg-transparent">
+
+                        <div class="flex items-center space-x-2">
+
+                            <div class="px-4 py-2 text-white rounded-full md:py-1 bg-brightRed">03</div>
+
+                            <h3 class="text-base font-bold md:mb-4 md:hidden"> Todo lo que necesita en un solo lugar</h3>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="hidden mb-4 text-lg font-bold md:block">Todo lo que necesita en un solo lugar</h3>
+                        <p class="text-darkGrayishBlue">Deja de saltar de un servicio a otro para comunicarte, almacena archivos, haz un seguimiento de las tareas y compartir documentos. Manage ofrece una solución de productividad de productividad en equipo.</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- LISTA NUMERADA -->
+        </div>
+    </section>
+    <!-- CARACTERISTICAS -->
+
+    <!-- TESTIMONIOS -->
+
+    <section id="testimonials">
+        <!-- CONTENEDOR -->
+        <div class="max-w-6xl px-5 mx-auto mt-32 text-center">
+            <!-- HEADING -->
+            <h2 class="text-4xl font-bold text-center">
+                ¿Qué tiene de diferente Manage?
+            </h2>
+            <!-- CONTENEDOR DE TESTIMONIOS -->
+            <div class="flex flex-col mt-24 md:flex-row md:space-x-6">
+                <!-- TESTIMONIO 1 -->
+                <div class="flex flex-col items-center p-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="./img/avatar-anisha.png" alt="">
+                    <h5 class="text-lg font-bold">Anisha Chang</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Manage ha potenciado el flujo de trabajo de nuestro equipo. La capacidad de mantener la visibilidad de los grandes logros en todo momento mantiene todos motivados".
+                    </p>
+                </div>
+                <!-- TESTIMONIO 2 -->
+                <div class="flex flex-col items-center p-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="./img/avatar-ali.png" alt="">
+                    <h5 class="text-lg font-bold">Alicia Markus</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Hemos podido cancelar muchas otras suscripciones desde que utilizar Manage. No hay más confusión entre canales y todo el mundo está mucho más centrado".
+                    </p>
+                </div>
+                 <!-- TESTIMONIO 3 -->
+                 <div class="flex flex-col items-center p-6 rounded-lg bg-veryLightGray md:w-1/3">
+                    <img src="./img/avatar-richard.png" alt="">
+                    <h5 class="text-lg font-bold">Richard Scott</h5>
+                    <p class="text-sm text-darkGrayishBlue">
+                        "Manage ha potenciado el flujo de trabajo de nuestro equipo. La capacidad de mantener la visibilidad de los grandes logros en todo momento mantiene todos motivados".
+                    </p>
+                </div>
+            </div>
+            <!-- BOTON -->
+            <div class="my-16">
+                <a href="#" class="p-3 px-6 pt-2 text-white bg-brightRed rounded-full align-baseline hover:bg-brightRedLight">Empezar</a>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- TESTIMONIOS -->
+
+    <!-- CTA  -->
+    <section id="cta" class="bg-brightRed">
+        <!-- CONTENEDOR -->
+        <div class="container flex flex-col items-center justify-between px-6 py-24 mx-auto space-y-12 md:flex-row md:space-y-0">
+
+            <!-- HEADING -->
+            <h2 class="text-5xl font-bold leading-tight text-center text-white md:text-4xl md:max-w-xl md:text-left">
+                Simplifique el trabajo de su equipo hoy.
+            </h2>
+
+            <!-- BOTON -->
+            <a href="#" class="p-3 px-6 pt-2 text-brightRed bg-white rounded-full shadow-2xl align-baseline hover:bg-gray-900">Empezar</a>
+
+        </div>
+    </section>
+
+    <!-- CTA  -->
+
+    <!-- FOOTER -->
+
+    <footer class="bg-veryDarkBlue">
+
+        <!-- CONTENEDOR -->
+        <div class="container flex flex-col-reverse justify-between px-6 py-10 mx-auto space-y-8 md:flex-row md:space-y-0">
+
+            <div class="flex flex-col-reverse items-center justify-between space-y-12 md:flex-col md:space-y-0 md:items-start">
+
+                <div class="mx-auto my-6 text-center text-white md:hidden">
+                    Arnaldo Reyes 2022 | Todos los derechos reservados.
+                </div>
+                
+                <!-- LOGO -->
+                <div>
+                    <img src="./img/logo-white.svg" alt="">
+                </div>
+                <!-- CONTENEDOR RSS -->
+                <div class="flex justify-center space-x-4">
+                    <a href="#"><img src="./img/icon-facebook.svg" alt=""></a>
+                    <a href="#"><img src="./img/icon-youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/icon-youtube.svg" alt=""></a>
+                    <a href="#"><img src="./img/icon-twitter.svg" alt=""></a>
+                    <a href="#"><img src="./img/icon-pinterest.svg" alt=""></a>
+                    <a href="#"><img src="./img/icon-instagram.svg" alt=""></a>
+                </div>
+            </div>
+             <!-- LISTA -->
+             <div class="flex justify-around space-x-3 font-thin">
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Inicio</a>
+                    <a href="#" class="hover:text-brightRed">Precios</a>
+                    <a href="#" class="hover:text-brightRed">Productos</a>
+                    <a href="#" class="hover:text-brightRed">Acerca de</a>
+                </div>
+                <div class="flex flex-col space-y-3 text-white">
+                    <a href="#" class="hover:text-brightRed">Carreras</a>
+                    <a href="#" class="hover:text-brightRed">Comunidad</a>
+                    <a href="#" class="hover:text-brightRed">Politica de Privacidad</a>
+                </div>
+            </div>
+             <!-- INPUT -->
+            <div class="flex flex-col justify-between">
+                <form>
+                    <div class="flex space-x-2">
+                        <input type="text" class="flex-1 px-2 rounded-full focus:outline-none font-thin text-sm" placeholder="Actualizado en su bandeja de entrada"/>
+                        <button class="px-5 py-2 font-thin text-white rounded-full bg-brightRed hover:bg-brightRedLight focus:outline-none">Ir!</button>
+                    </div>
+                </form>
+                <div class="hidden text-white md:block">
+                    Arnaldo Reyes 2022 | Todos los derechos reservados.
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FOOTER -->
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
